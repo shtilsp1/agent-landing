@@ -1,0 +1,6 @@
+@use "../abstracts/variables";
+
+.header {
+  padding-top: 72px;
+  color: variables.$primary-color;
+}

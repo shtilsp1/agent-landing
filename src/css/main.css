@@ -1,3 +1,187 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Nunito_bold";
+  src: url("/assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("/assets/fonts/Nunito/Nunito-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url("/assets/fonts/Nunito/Nunito-SemiBold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand-bold";
+  src: url("/assets/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"), url("/assets/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/assets/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 72px;
+  color: #1D1D1D;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .nav__menu {
+  display: flex;
+  gap: 50px;
+  font-family: Quicksand-Regular, sans-serif;
+  font-size: 18px;
+}
+.nav .nav__menu .nav__menu-link:active {
+  font-family: Quicksand-bold, sans-serif;
+}
+.nav .nav__menu .nav__menu-link:focus {
+  font-family: Quicksand-bold, sans-serif;
+  outline: none;
+}
+.nav .nav__menu .nav__menu-link:hover {
+  font-family: Quicksand-bold, sans-serif;
+}
+
+.nav__logo-link {
+  display: flex;
+  align-items: center;
+}
+.nav__logo-link .nav__logo-image {
+  width: 52.39px;
+  height: 49.89px;
+}
+.nav__logo-link .nav__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.99px;
+  padding-left: 10.77px;
+}
+.nav__logo-link .nav__logo-text .nav__logo-upper_text {
+  font-family: Quicksand-bold, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.nav__logo-link .nav__logo-text .nav__logo-under_text {
+  font-family: Quicksand-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.transparent_button {
+  color: #377DFF;
+  background: none;
+  border: 1px solid #377DFF;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-family: quicksand-bold, sans-serif;
+  font-size: 16px;
+}
+
+.transparent_button:hover {
+  color: white;
+  background: #377DFF;
+  border: 1px solid #377DFF;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-family: quicksand-bold, sans-serif;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.button {
+  color: white;
+  background: #377DFF;
+  border: 1px solid #377DFF;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-family: quicksand-bold, sans-serif;
+  font-size: 16px;
+}
+
+.button:hover {
+  color: #377DFF;
+  background: none;
+  border: 1px solid #377DFF;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+  font-family: quicksand-bold, sans-serif;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=main.css.map */

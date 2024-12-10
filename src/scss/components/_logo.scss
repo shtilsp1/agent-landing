@@ -1,0 +1,30 @@
+
+.nav__logo-link {
+  display: flex;
+  align-items: center;
+
+  .nav__logo-image {
+    width: 52.39px;
+    height: 49.89px;
+  }
+
+  .nav__logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.99px;
+    padding-left: 10.77px;
+
+    .nav__logo-upper_text {
+      font-family: Quicksand-bold, sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+    .nav__logo-under_text {
+      font-family: Quicksand-Regular, sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.transparent_button {
+  @include mixins.button-transparent;
+  border: 1px solid variables.$blue-color;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+
+  font-family: quicksand-bold, sans-serif;
+  font-size: variables.$btn-font-size;
+}
+
+.transparent_button:hover {
+  @include mixins.button-transparent-hover;
+  border: 1px solid variables.$blue-color;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+
+  font-family: quicksand-bold, sans-serif;
+  font-size: variables.$btn-font-size;
+  transition: .5s;
+}
+
+.button {
+  @include mixins.button;
+  border: 1px solid variables.$blue-color;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+
+  font-family: quicksand-bold, sans-serif;
+  font-size: variables.$btn-font-size;
+}
+
+.button:hover {
+  @include mixins.button-hover;
+  border: 1px solid variables.$blue-color;
+  border-radius: 24px;
+  padding: 12px 50px;
+  cursor: pointer;
+
+  font-family: quicksand-bold, sans-serif;
+  font-size: variables.$btn-font-size;
+}

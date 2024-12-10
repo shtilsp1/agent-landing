@@ -1,17 +1,36 @@
 @font-face {
-  font-family: 'Nunito';
-  src: url('/assets/fonts/Nunito/Nunito-Bold.ttf') format('truetype'),
-      url('/assets/fonts/Nunito/Nunito-Light.ttf') format('truetype'),
-      url('/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype'),
-      url('/assets/fonts/Nunito/Nunito-SemiBold.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Nunito_bold';
+  src: url('/assets/fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Nunito-Light';
+  src: url('/assets/fonts/Nunito/Nunito-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url('/assets/fonts/Nunito/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Quicksand-bold';
   src: url('/assets/fonts/Quicksand/Quicksand-Bold.ttf') format('truetype'),
        url('/assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('/assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

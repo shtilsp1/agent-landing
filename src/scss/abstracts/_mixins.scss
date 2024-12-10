@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-transparent {
+  color: variables.$blue-color;
+  background: none;
+}
+
+@mixin button-transparent-hover {
+  color: white;
+  background: variables.$blue-color;
+}
+
+@mixin button {
+  color: white;
+  background: variables.$blue-color;
+}
+
+@mixin button-hover {
+  color: variables.$blue-color;
+  background: none;
+}
