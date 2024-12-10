@@ -13,7 +13,7 @@
 }
 
 .transparent_button:hover {
-  @include mixins.button-transparent-hover;
+  @include mixins.button;
   border: 1px solid variables.$blue-color;
   border-radius: 24px;
   padding: 12px 50px;
@@ -36,7 +36,7 @@
 }
 
 .button:hover {
-  @include mixins.button-hover;
+  @include mixins.button-transparent;
   border: 1px solid variables.$blue-color;
   border-radius: 24px;
   padding: 12px 50px;

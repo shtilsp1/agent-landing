@@ -11,17 +11,7 @@
   background: none;
 }
 
-@mixin button-transparent-hover {
-  color: white;
-  background: variables.$blue-color;
-}
-
 @mixin button {
   color: white;
   background: variables.$blue-color;
-}
-
-@mixin button-hover {
-  color: variables.$blue-color;
-  background: none;
 }
