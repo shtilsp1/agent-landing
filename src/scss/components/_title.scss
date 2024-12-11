@@ -1,0 +1,126 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main__title {
+  width: 749px;
+
+  @include mixins.flex-center-column;
+
+  .main__title-heading {
+    font-family: "Nunito_extrabold", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    line-height: 87px;
+  }
+
+  .main__title-subtitle {
+    font-family: "Nunito-Regular", sans-serif;
+    font-size: variables.$regular-font-size;
+    text-align: center;
+    color: variables.$regular-color;
+    line-height: 150%;
+
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+}
+
+.main__image-block {
+  padding-top: 76px;
+  position: relative;
+
+  .main__image-block-image {
+    width: 739px;
+    height: 501px;
+  }
+
+  .main__image-block-great-block {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    @include mixins.info-card;
+    width: 175px;
+    height: 95px;
+    gap: 7px;
+
+    .great-block__header {
+      display: flex;
+      gap: 3px;
+
+      .great-block__header-text {
+        font-family: "Quicksand-bold", sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: variables.$primary-color;
+      }
+    }
+    .great-block__content {
+      display: flex;
+      gap: 3px;
+
+      p {
+        font-size: 24px;
+      }
+
+      .great-block__content-bold {
+        font-family: "Nunito-bold", sans-serif;
+      }
+
+      .great-block__content-regular {
+        font-family: "Nunito-Regular", sans-serif;
+      }
+    }
+
+
+  }
+  //review
+  .main__image-block-review {
+    @include mixins.info-card;
+    align-items: flex-start;
+    position: absolute;
+    padding: 27px 20px 25px 21px;
+    bottom: 0;
+    right: -100px;
+
+    .review__header {
+      display: flex;
+      gap: 10px;
+      padding-bottom: 12px;
+
+      .review__header-image {
+        width: 32px;
+        height: 32px;
+      }
+      .review__header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .review__header-text-title {
+          font-family: "Quicksand-bold", sans-serif;
+          font-size: 10px;
+          line-height: 13px;
+          color: variables.$primary-color;
+        }
+
+        .review__header-text-subtitle {
+          font-family: "Quicksand-bold", sans-serif;
+          font-size: 6px;
+          line-height: 8px;
+          color: variables.$primary-color;
+        }
+      }
+    }
+    .review__content {
+      font-family: "Nunito-bold", sans-serif;
+      font-size: 10px;
+      line-height: 14px;
+      width: 125px;
+    }
+  }
+
+}
+

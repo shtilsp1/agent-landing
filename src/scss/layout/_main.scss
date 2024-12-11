@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main {
+  @include mixins.flex-center-column;
+  color: variables.$primary-color;
+  padding-top: 68px;
+  padding-bottom: 157px;
+}

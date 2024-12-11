@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+@mixin flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @mixin button-transparent {
   color: variables.$blue-color;
   background: none;
@@ -14,4 +21,14 @@
 @mixin button {
   color: white;
   background: variables.$blue-color;
+}
+
+@mixin info-card{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
 }

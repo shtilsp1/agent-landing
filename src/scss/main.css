@@ -7,5 +7,8 @@
 @use "components/nav";
 @use "components/logo";
 @use "components/button";
+@use "layout/main";
+@use "components/title";
+@use "components/background-balls";
 
 /*# sourceMappingURL=main.css.map */

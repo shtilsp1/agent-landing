@@ -1,0 +1,74 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main__background-ball {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+
+}
+
+.ball-red {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+  border: none;
+  background: variables.$red-gradient;
+}
+.ball-blue {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+  border: none;
+  background: variables.$blue-gradient;
+}
+
+.ball-1 {
+  top: 32%;
+  right: -15px;
+}
+
+.ball-2 {
+  top: 48%;
+  left: 10%;
+}
+
+.ball-3 {
+  top: 65%;
+  right: 22%;
+}
+
+.ball-4 {
+  top: 85%;
+  left: 28%;
+}
+
+
+
+.blue-dots {
+  display: flex;
+  gap: 13px;
+  position: absolute;
+  left: 138px;
+  top: 56px;
+
+  .blue-dot {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background: variables.$blue-color;
+  }
+}
+
+.red-dots {
+  display: flex;
+  gap: 13px;
+  position: absolute;
+  left: 138px;
+  bottom: -20px;
+
+  .red-dot {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background: variables.$red-color;
+  }
+}
+
