@@ -1,0 +1,65 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main__about-us {
+  @include mixins.flex-center-column;
+  padding-top: 150px;
+
+  .about__us-subtitle {
+    color: variables.$blue-color;
+    font-size: variables.$semi-bold-font-size;
+    font-family: "Quicksand-bold", sans-serif;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+
+  .about__heading {
+    color: variables.$primary-color;
+    font-family: "Nunito-bold", sans-serif;
+    font-size: variables.$bold-font-size;
+    padding-bottom: 38px;
+  }
+
+  .about__content {
+    @include mixins.flex-center;
+    gap: 65px;
+  }
+
+  .about__image-group {
+    position: relative;
+    .image-group__image {
+      width: 565px;
+      height: 402px;
+    }
+  }
+
+  .about__content-group {
+    @include mixins.flex-center-column;
+    align-items: flex-start;
+    gap: 24px;
+
+    .about__content-text {
+      @include mixins.flex-center-column;
+      gap: 24px;
+
+      .about__content-text-item {
+        font-family: "Quicksand-Regular", sans-serif;
+        font-size: variables.$regular-font-size;
+        color: variables.$regular-color;
+        line-height: 32px;
+      }
+    }
+
+    .about__content-btns {
+      display: flex;
+      gap: 25px;
+
+      .transparent_button {
+        @include mixins.flex-center;
+        gap: 5px;
+      }
+    }
+
+
+  }
+}

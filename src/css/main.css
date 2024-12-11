@@ -165,6 +165,7 @@ a {
 .transparent_button:hover {
   color: white;
   background: #377DFF;
+  box-shadow: 0 4px 8px rgba(55, 125, 255, 0.5);
   border: 1px solid #377DFF;
   border-radius: 24px;
   padding: 12px 50px;
@@ -177,6 +178,7 @@ a {
 .button {
   color: white;
   background: #377DFF;
+  box-shadow: 0 4px 8px rgba(55, 125, 255, 0.5);
   border: 1px solid #377DFF;
   border-radius: 24px;
   padding: 12px 50px;
@@ -204,7 +206,6 @@ a {
   flex-direction: column;
   color: #1D1D1D;
   padding-top: 68px;
-  padding-bottom: 157px;
 }
 
 .main__title {
@@ -390,6 +391,105 @@ a {
   width: 5px;
   height: 5px;
   background: #F62424;
+}
+
+.about__dots {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 13px 13px 13px 13px 13px 13px;
+  grid-template-rows: 13px 13px 13px 13px;
+  z-index: -1;
+}
+
+.orange-dots {
+  position: absolute;
+  top: -12px;
+  left: -16px;
+}
+
+.purple-dots {
+  position: absolute;
+  bottom: -12px;
+  right: -46px;
+}
+
+.about__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.orange {
+  background: #FF5C00;
+}
+
+.purple {
+  background: #EB00FF;
+}
+
+.main__about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.main__about-us .about__us-subtitle {
+  color: #377DFF;
+  font-size: 24px;
+  font-family: "Quicksand-bold", sans-serif;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.main__about-us .about__heading {
+  color: #1D1D1D;
+  font-family: "Nunito-bold", sans-serif;
+  font-size: 55px;
+  padding-bottom: 38px;
+}
+.main__about-us .about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+.main__about-us .about__image-group {
+  position: relative;
+}
+.main__about-us .about__image-group .image-group__image {
+  width: 565px;
+  height: 402px;
+}
+.main__about-us .about__content-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.main__about-us .about__content-group .about__content-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.main__about-us .about__content-group .about__content-text .about__content-text-item {
+  font-family: "Quicksand-Regular", sans-serif;
+  font-size: 20px;
+  color: #464646;
+  line-height: 32px;
+}
+.main__about-us .about__content-group .about__content-btns {
+  display: flex;
+  gap: 25px;
+}
+.main__about-us .about__content-group .about__content-btns .transparent_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

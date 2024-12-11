@@ -21,6 +21,8 @@
 @mixin button {
   color: white;
   background: variables.$blue-color;
+  box-shadow: 0 4px 8px rgba(55, 125, 255, 0.5);
+
 }
 
 @mixin info-card{

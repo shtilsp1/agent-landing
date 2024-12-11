@@ -1,6 +1,8 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
+
+//title balls
 .main__background-ball {
   position: absolute;
   width: 31px;
@@ -41,7 +43,7 @@
 }
 
 
-
+// title dots
 .blue-dots {
   display: flex;
   gap: 13px;
@@ -72,3 +74,37 @@
   }
 }
 
+//About dots
+.about__dots {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 13px 13px 13px 13px 13px 13px;
+  grid-template-rows: 13px 13px 13px 13px;
+  z-index: -1;
+}
+
+.orange-dots {
+  position: absolute;
+  top: -12px;
+  left: -16px;
+}
+
+.purple-dots {
+  position: absolute;
+  bottom: -12px;
+  right: -46px;
+}
+
+.about__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.orange {
+  background: #FF5C00;
+}
+
+.purple {
+  background: #EB00FF;
+}
