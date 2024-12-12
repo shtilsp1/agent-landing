@@ -11,5 +11,6 @@
 @use "components/title";
 @use "components/background-balls";
 @use "components/about-us";
+@use "components/services";
 
 /*# sourceMappingURL=main.css.map */
