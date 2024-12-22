@@ -587,4 +587,74 @@ a {
   text-align: center;
 }
 
+.main__portfolio {
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__portfolio .portfolio__subtitle {
+  font-size: 24px;
+  color: #377DFF;
+  font-family: "Quicksand-bold", sans-serif;
+  padding-bottom: 24px;
+}
+.main__portfolio .portfolio__title {
+  font-size: 55px;
+  font-family: "Nunito-bold", sans-serif;
+  padding-bottom: 24px;
+  color: #464646;
+}
+.main__portfolio .portfolio__text {
+  color: #464646;
+  font-size: 20px;
+  font-family: "Quicksand-Regular", sans-serif;
+  padding-bottom: 48px;
+  width: 647px;
+  line-height: 34px;
+  text-align: center;
+}
+.main__portfolio .portfolio__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 69px;
+  padding-bottom: 34px;
+}
+.main__portfolio .portfolio__cards .portfolio__cards-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  padding-left: 24px;
+  font-family: "Quicksand-Bold", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.main__portfolio .portfolio__cards-card:nth-child(odd) {
+  width: 350px;
+  height: 350px;
+}
+.main__portfolio .portfolio__cards-card:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  background-image: url("/assets/images/design.png");
+}
+.main__portfolio .portfolio__cards-card:nth-child(2) {
+  width: 400px;
+  height: 400px;
+  background-image: url("/assets/images/cloud.png");
+  background-size: contain;
+}
+.main__portfolio .portfolio__cards-card:nth-child(3) {
+  width: 350px;
+  height: 350px;
+  background-image: url("/assets/images/furniture.png");
+  background-size: contain;
+}
+
 /*# sourceMappingURL=main.css.map */

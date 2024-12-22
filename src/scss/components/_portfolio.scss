@@ -1,0 +1,76 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main__portfolio {
+  padding-top: 130px;
+  @include mixins.flex-center-column;
+
+  .portfolio__subtitle {
+    font-size: variables.$semi-bold-font-size;
+    color: variables.$blue-color;
+    font-family: "Quicksand-bold", sans-serif;
+    padding-bottom: 24px;
+  }
+
+  .portfolio__title {
+    font-size: variables.$bold-font-size;
+    font-family: "Nunito-bold", sans-serif;
+    padding-bottom: 24px;
+    color: variables.$regular-color;
+  }
+
+  .portfolio__text {
+    color: variables.$regular-color;
+    font-size: variables.$regular-font-size;
+    font-family: "Quicksand-Regular", sans-serif;
+    padding-bottom: 48px;
+    width: 647px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .portfolio__cards {
+    @include mixins.flex-center;
+    gap: 69px;
+    padding-bottom: 34px;
+
+    .portfolio__cards-card {
+      @include mixins.flex-center-column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-bottom: 50px;
+      padding-left: 24px;
+      font-family: "Quicksand-Bold", sans-serif;
+      font-size: variables.$regular-font-size;
+      color: white;
+    }
+  }
+
+  .portfolio__cards-card:nth-child(odd) {
+    width: 350px;
+    height: 350px;
+  }
+
+  .portfolio__cards-card:nth-child(1) {
+    width: 350px;
+    height: 350px;
+    background-image: url("/assets/images/design.png");
+  }
+
+  .portfolio__cards-card:nth-child(2) {
+    width: 400px;
+    height: 400px;
+    background-image: url("/assets/images/cloud.png");
+    background-size: contain;
+  }
+
+
+  .portfolio__cards-card:nth-child(3) {
+    width: 350px;
+    height: 350px;
+    background-image: url("/assets/images/furniture.png");
+    background-size: contain;
+  }
+
+
+}
