@@ -1,0 +1,58 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.footer {
+  background-color: variables.$footer-bg;
+  padding: 132px 0 33px 0;
+  @include mixins.flex-center-column;
+  color: white;
+  font-size: variables.$nav-font-size;
+  font-family: "Quicksand-Regular", sans-serif;
+
+  .footer__links {
+    width: 100%;
+    @include mixins.flex-center;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .footer__logo {
+      background-color: white;
+      padding: 19px 26px 19px 25px;
+      border-radius: 20px;
+      color: variables.$regular-color;
+    }
+
+    .footer__list[title]:before {
+      content: attr(title);
+      display: block;
+      color: white;
+      font-size: 22px;
+      font-family: "Quicksand-bold", sans-serif;
+    }
+
+    .footer__list {
+      @include mixins.flex-center-column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+  .footer__social-list {
+    padding-top: 122px;
+    @include mixins.flex-center;
+    gap: 40px;
+  }
+
+  .footer__copyright {
+    width: fit-content;
+  }
+
+  .footer__divider {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 17px auto;
+    width: 500px;
+  }
+}
+

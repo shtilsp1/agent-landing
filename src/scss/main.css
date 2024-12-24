@@ -13,5 +13,6 @@
 @use "components/about-us";
 @use "components/services";
 @use "components/portfolio";
+@use "layout/footer";
 
 /*# sourceMappingURL=main.css.map */

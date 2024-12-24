@@ -3,6 +3,7 @@
 
 .main__portfolio {
   padding-top: 130px;
+  padding-bottom: 178px;
   @include mixins.flex-center-column;
 
   .portfolio__subtitle {

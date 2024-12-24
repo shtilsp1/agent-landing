@@ -95,6 +95,17 @@ a {
 .container {
   max-width: 1240px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.footer__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
@@ -589,6 +600,7 @@ a {
 
 .main__portfolio {
   padding-top: 130px;
+  padding-bottom: 178px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -655,6 +667,65 @@ a {
   height: 350px;
   background-image: url("/assets/images/furniture.png");
   background-size: contain;
+}
+
+.footer {
+  background-color: #383638;
+  padding: 132px 0 33px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  font-family: "Quicksand-Regular", sans-serif;
+}
+.footer .footer__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer .footer__links .footer__logo {
+  background-color: white;
+  padding: 19px 26px 19px 25px;
+  border-radius: 20px;
+  color: #464646;
+}
+.footer .footer__links .footer__list[title]:before {
+  content: attr(title);
+  display: block;
+  color: white;
+  font-size: 22px;
+  font-family: "Quicksand-bold", sans-serif;
+}
+.footer .footer__links .footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer .footer__social-list {
+  padding-top: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer .footer__copyright {
+  width: fit-content;
+}
+.footer .footer__divider {
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin: 17px auto;
+  width: 500px;
 }
 
 /*# sourceMappingURL=main.css.map */
