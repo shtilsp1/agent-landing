@@ -1,5 +1,6 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .nav {
   @include mixins.flex-center;
@@ -11,16 +12,62 @@
     font-family: Quicksand-Regular, sans-serif;
     font-size: variables.$nav-font-size;
 
-    .nav__menu-link:active {
-      font-family: Quicksand-bold,sans-serif;
-    }
-    .nav__menu-link:focus {
-      font-family: Quicksand-bold,sans-serif;
-      outline: none;
-    }
+  }
 
-    .nav__menu-link:hover {
-      font-family: Quicksand-bold,sans-serif;
+  .menu-toggle {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background: black;
+      margin: 4px 0;
     }
   }
+  .header__button {
+    @include respond(mobile) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .nav__menu {
+    display: none !important;
+
+    ul {
+      flex-direction: column;
+      background: black;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      li {
+        margin: 10px 0;
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .menu-toggle:checked + .burger-menu + .nav {
+    display: block !important;
+  }
+
+  .burger-menu {
+    display: flex !important;
+  }
+
+
+
 }

@@ -1,10 +1,14 @@
 @use "../abstracts/mixins";
+@import "../abstracts/mixins";
 
 .container {
   max-width: 1240px;
   margin: 0 auto;
   width: 100%;
 
+  @include respond(mobile) {
+    max-width: 354px;
+  }
 }
 
 .footer__container {
@@ -14,3 +18,15 @@
 
   @include mixins.flex-center-column;
 }
+
+@media screen and (max-width: 390px) {
+  .footer__container {
+    max-width: 330px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include mixins.flex-center-column;
+  }
+}
+
+

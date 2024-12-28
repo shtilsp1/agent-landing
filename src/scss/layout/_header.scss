@@ -1,6 +1,10 @@
 @use "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .header {
   padding-top: 72px;
   color: variables.$primary-color;
+  @include respond(mobile) {
+    padding-top: 40px;
+  }
 }

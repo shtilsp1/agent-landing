@@ -46,3 +46,25 @@
   font-family: quicksand-bold, sans-serif;
   font-size: variables.$btn-font-size;
 }
+
+@media screen and (max-width: 390px) {
+  .transparent_button {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+
+  .transparent_button:hover {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+
+  .button:hover {
+    padding: 10px 35px;
+    font-size: 12px;
+  }
+}

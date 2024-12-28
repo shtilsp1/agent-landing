@@ -63,3 +63,54 @@
 
   }
 }
+
+@media screen and (max-width: 390px) {
+  .main__about-us {
+    padding-top: 99px;
+
+    .about__us-subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      padding-bottom: 10px;
+    }
+
+    .about__heading {
+      font-size: 24px;
+      padding-bottom: 35px;
+    }
+
+    .about__content {
+      @include mixins.flex-center-column
+    }
+
+    .about__image-group {
+      position: relative;
+      .image-group__image {
+        width: 340px;
+        height: 258px;
+      }
+    }
+
+    .about__content-group {
+      gap: 24px;
+
+      .about__content-text {
+        gap: 10px;
+
+        .about__content-text-item {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+
+      .about__content-btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+
+    }
+  }
+}

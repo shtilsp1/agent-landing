@@ -108,3 +108,23 @@
 .purple {
   background: #EB00FF;
 }
+
+@media screen and (max-width: 390px) {
+  .main__background-ball {
+    width: 16px;
+    height: 16px;
+  }
+
+  // title dots
+  .blue-dots {
+    left: 200px;
+    top: 40px;
+
+  }
+
+  .red-dots {
+    left: 20px;
+    bottom: -10px;
+
+  }
+}

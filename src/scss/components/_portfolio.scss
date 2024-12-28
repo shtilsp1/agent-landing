@@ -75,3 +75,68 @@
 
 
 }
+
+@media screen and (max-width: 390px) {
+  .main__portfolio {
+    padding-top: 99px;
+    padding-bottom: 100px;
+
+    .portfolio__subtitle {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+
+    .portfolio__title {
+      font-size: 24px;
+      padding-bottom: 34px;
+    }
+
+    .portfolio__text {
+      font-size: 14px;
+      padding-bottom: 34px;
+      width: 340px;
+      line-height: 24px;
+    }
+
+    .portfolio__cards {
+      @include mixins.flex-center-column;
+      gap: 54px;
+      padding-bottom: 48px;
+
+      .portfolio__cards-card {
+        @include mixins.flex-center-column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 23px;
+        padding-left: 24px;
+        font-size: 24px;
+      }
+    }
+
+    .portfolio__cards-card:nth-child(odd) {
+      width: 300px;
+      height: 300px;
+    }
+
+    .portfolio__cards-card:nth-child(1) {
+      width: 300px;
+      height: 300px;
+      background-image: url("/assets/images/design.png");
+      background-size: contain;
+    }
+
+    .portfolio__cards-card:nth-child(2) {
+      width: 340px;
+      height: 340px;
+      background-image: url("/assets/images/cloud.png");
+      background-size: contain;
+    }
+
+    .portfolio__cards-card:nth-child(3) {
+      width: 300px;
+      height: 300px;
+      background-image: url("/assets/images/furniture.png");
+      background-size: contain;
+    }
+  }
+}
